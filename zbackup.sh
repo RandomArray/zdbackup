@@ -62,12 +62,12 @@ startBackup () {
   echo "Uploading Site Files Archive: $files_backup_filename.tar.gz"
   $gdrive_path upload --parent $google_folder_id $files_backup_filename.tar.gz
   
-  ## Clean Up Old Backups
+  ## Clean Up Old Backup Archives
   backup_number_keep=$((number_backup_keep+1))
   old_mysql_archive=($(ls -1 $backup_path/mysql_* | sort -r | tail -n +$backup_number_keep | xargs echo))
   old_files_archive=($(ls -1 $backup_path/files_* | sort -r | tail -n +$backup_number_keep | xargs echo))
   
-  ## Remove old backups from Google Drive
+  ## Remove old MySQL Archives from Google Drive and Local Storage
   echo "Clean-Up Old MySQL Archive..."
   for filepath in "${old_mysql_archive[@]}"
   do
@@ -86,8 +86,7 @@ startBackup () {
   	rm $filepath
   done
 
-  ############ REMOVE OLD SITE FILES ARCHIVE
-  
+  ## Remove old Site Files Archive from Google Drive and Local Storage
   echo "Clean-Up Old Site Files Archive..."
   for filepath in "${old_files_archive[@]}"
   do
