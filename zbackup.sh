@@ -4,7 +4,7 @@
 ## Get gdrive (Google Drive CLI Client) from github.com/prasmussen/gdrive
 
 
-# Path to gdrive Binary
+# Path to gdrive binary
 gdrive_path="/home/username/zbackup/gdrive-linux-x64"
 
 # Location to store backup archives
@@ -25,7 +25,7 @@ database_name="--all-databases"
 # Name of folder in Google Drive to create and place backup files.
 backup_folder="Website Backups - MyWebsiteName.com"
 
-# Number of backups to
+# Number of backups to keep
 number_backup_keep=7
 
 ####
