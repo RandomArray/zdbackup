@@ -22,3 +22,31 @@ You'll need to download your required version of gdrive from the [gdrive project
   * Copy/paste the generated code from your browser into the waiting input of the `gdrive about` command.
 * Run `zbackup.sh` to start the backup.
 * Schedule cron to run nightly, etc..
+
+
+## Configuration
+```
+# Path to gdrive Binary
+gdrive_path="/home/username/zbackup/gdrive-linux-x64"
+
+# Location to store backup archives
+backup_path="/home/username/zbackup/backups"
+
+# Path to website public_html or www folder
+public_html="/home/username/public_html"
+
+# Database Host, Port, User, Password
+database_host="localhost"
+database_port="3306"
+database_user="root"
+database_pass="securepassword"
+
+# Database to backup. Use --all-databases to backup all databases.
+database_name="--all-databases"
+
+# Name of folder in Google Drive to create and place backup files.
+backup_folder="Website Backups - MyWebsiteName.com"
+
+# Number of backups to
+number_backup_keep=7
+```
