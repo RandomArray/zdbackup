@@ -6,7 +6,7 @@ zbackup
 ## Overview
 zbackup is a shell script to backup your Website Files and MySQL Databases to Google Drive with [gdrive](https://github.com/prasmussen/gdrive/), a command line utility for interacting with Google Drive.
 
-1. Creates a folder in Goolge Drive. Eg: `Website Backups - MyWebsiteName.com`
+1. Creates a folder in Google Drive. Eg: `Website Backups - MyWebsiteName.com`
 2. Exports MySQL Database with `mysqldump`
 3. Creates tar archive of exported MySQL Database.
 4. Creates tar archive of defined `public_html` path.
