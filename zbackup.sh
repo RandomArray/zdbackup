@@ -1,10 +1,10 @@
 #!/bin/sh
 
-## Backup of website database and files uploaded to Google Drive with GDrive
+## Backup of website database and files uploaded to Google Drive with gdrive
 ## Get gdrive (Google Drive CLI Client) from github.com/prasmussen/gdrive
 
 
-# Path to GDrive Binary
+# Path to gdrive Binary
 gdrive_path="/home/username/zbackup/gdrive-linux-x64"
 
 # Location to store backup archives
