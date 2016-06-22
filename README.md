@@ -1,10 +1,10 @@
-zbackup
+zdbackup
 ======
 
 `Warning` Use this software at your own risk.
 
 ## Overview
-zbackup is a shell script to backup your Website Files and MySQL Databases to Google Drive with [gdrive](https://github.com/prasmussen/gdrive/), a command line utility for interacting with Google Drive.
+zdbackup is a shell script to backup your Website Files and MySQL Databases to Google Drive with [gdrive](https://github.com/prasmussen/gdrive/), a command line utility for interacting with Google Drive.
 
 1. Creates a folder in Google Drive. Eg: `Website Backups - MyWebsiteName.com`
 2. Exports MySQL Database with `mysqldump`
@@ -20,17 +20,17 @@ You'll need to download your required version of gdrive from the [gdrive project
 * Edit the scripts's config variables for your enviroment.
 * Run `gdrive about` and copy/paste the link to your browser.
   * Copy/paste the generated code from your browser into the waiting input of the `gdrive about` command.
-* Run `zbackup.sh` to start the backup.
+* Run `zdbackup.sh` to start the backup.
 * Schedule cron to run nightly, etc..
 
 
 ## Configuration
 ```
 # Path to gdrive binary
-gdrive_path="/home/username/zbackup/gdrive-linux-x64"
+gdrive_path="/home/username/zdbackup/gdrive-linux-x64"
 
 # Location to store backup archives
-backup_path="/home/username/zbackup/backups"
+backup_path="/home/username/zdbackup/backups"
 
 # Path to website public_html or www folder
 public_html="/home/username/public_html"
