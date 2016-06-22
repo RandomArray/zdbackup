@@ -5,10 +5,10 @@
 
 
 # Path to gdrive binary
-gdrive_path="/home/username/zbackup/gdrive-linux-x64"
+gdrive_path="/home/username/zdbackup/gdrive-linux-x64"
 
 # Location to store backup archives
-backup_path="/home/username/zbackup/backups"
+backup_path="/home/username/zdbackup/backups"
 
 # Path to website public_html or www folder
 public_html="/home/username/public_html"
